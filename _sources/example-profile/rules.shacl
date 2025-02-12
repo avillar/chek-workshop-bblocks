@@ -34,3 +34,25 @@ my-rule:prefixes a owl:Ontology ;
         [ sh:namespace "urn:chek:vocab/"^^xsd:anyURI ;
             sh:prefix "chek" ] .
 
+my-rule:my-rule a sh:NodeShape ;
+    sh:message "Building has LoD less than 3.1" ;
+    sh:name "My sample rule for buildings" ;
+    sh:severity sh:Violation ;
+    sh:sparql [ sh:prefixes my-rule:prefixes ;
+            sh:select """
+SELECT $this (city:lod as ?path) (?lod as ?value) WHERE {
+  FILTER NOT EXISTS {
+    $this city:hasGeometry ?geometry .
+    ?geometry city:hasSurface ?surface .
+    ?geometry city:lod ?lod .
+    FILTER REGEX(?lod, "^[3-4]\\\\.[1-4]$")
+  }
+}""" ] ;
+    sh:target [ a sh:SPARQLTarget ;
+            sh:prefixes my-rule:prefixes ;
+            sh:select """
+SELECT ?this WHERE {
+  ?this a city:Building .
+  ?this city:hasGeometry ?geometry .
+  ?geometry city:hasSurface ?surface .
+}""" ] .
