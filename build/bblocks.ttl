@@ -7,63 +7,26 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/ogc.bbr.template.myFeature> a skos:Concept,
+<https://avillar.github.io/ogc.bbr.template.example-profile> a skos:Concept,
         dcat:Dataset,
-        bblocks:Schema ;
-    rdfs:label "Custom Feature" ;
-    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
-    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/generateddocs/markdown/bbr/template/myFeature/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/bblock/ogc.bbr.template.myFeature" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/generateddocs/json-full/bbr/template/myFeature/index.json" ] ;
-    dct:hasVersion "1.0" ;
-    dct:modified "2025-02-12"^^xsd:date ;
-    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
-    skos:inScheme <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/> ;
-    dcat:keyword "examples",
-        "feature" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/ogc.bbr.template.mySchema>,
-        <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/ogc.geo.features.feature> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/annotated/bbr/template/myFeature/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/annotated/bbr/template/myFeature/schema.json>,
-        <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/annotated/bbr/template/myFeature/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/_sources/mySchema/rules.shacl> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
-
-<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
-
-<https://example.com/sources/1> rdfs:label "Sample source document" .
-
-<https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/ogc.bbr.template.mySchema> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Schema ;
-    rdfs:label "My Schema" ;
-    dct:abstract "An example schema defining the set of properties of any type of object." ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
+        bblocks:Model ;
+    rdfs:label "My example profile" ;
+    dct:abstract "Simple profile for demo purposes" ;
+    dct:created "2024-11-10T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/generateddocs/json-full/bbr/template/mySchema/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/generateddocs/markdown/bbr/template/mySchema/index.md" ],
+            rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/build/generateddocs/json-full/bbr/template/example-profile/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/bblock/ogc.bbr.template.mySchema" ] ;
+            rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/bblock/ogc.bbr.template.example-profile" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/build/generateddocs/markdown/bbr/template/example-profile/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-02-12"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/> ;
-    dcat:keyword "templates" ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/annotated/bbr/template/mySchema/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/annotated/bbr/template/mySchema/schema.json>,
-        <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/annotated/bbr/template/mySchema/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/_sources/mySchema/rules.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/_sources/mySchema/context.jsonld> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
+    skos:inScheme <https://avillar.github.io/chek-workshop-bblocks/> ;
+    dcat:keyword "chek-validation-profile" ;
+    bblocks:hasShaclRule <https://avillar.github.io/chek-workshop-bblocks/_sources/example-profile/rules.shacl> ;
+    bblocks:status <http://www.opengis.net/def/status/stable> .
 
-<https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/> a skos:ConceptScheme,
+<https://avillar.github.io/chek-workshop-bblocks/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - My OGC Building Blocks repository" ;
     dct:abstract """This is an example text for the abstract. It should be short and to the point.
@@ -73,19 +36,19 @@ A "Tell me more" link will appear if there is an additional description with a l
 including [links](https://google.es).
 """ ;
     skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
-    bblocks:hasValidationReport <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://avillar.github.io/chek-workshop-bblocks/build/tests/report.html> ;
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-02-12T11:53:18.947608"^^xsd:dateTime ;
-    prov:startedAtTime "2025-02-12T11:53:18.888376"^^xsd:dateTime ;
+    prov:endedAtTime "2025-02-12T11:59:49.077265"^^xsd:dateTime ;
+    prov:startedAtTime "2025-02-12T11:59:49.019170"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:bb28b897da710551bab1dcf3544ba5b0cdbdefef" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/avillar/chek-workshop-bblocks/undefined/build/register.json> ] ;
+            dct:hasVersion "git:db4f396e72d3c67065ccaf98e9b4b7653c87a7de" ;
+            rdfs:seeAlso <https://avillar.github.io/chek-workshop-bblocks/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

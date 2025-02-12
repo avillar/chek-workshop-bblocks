@@ -1,0 +1,26 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.template.example-profile",
+  "name": "My example profile",
+  "abstract": "Simple profile for demo purposes",
+  "status": "stable",
+  "dateTimeAddition": "2024-11-10T00:00:00Z",
+  "itemClass": "model",
+  "version": "0.1",
+  "dateOfLastChange": "2025-02-12",
+  "tags": [
+    "chek-validation-profile"
+  ],
+  "shaclRules": {
+    "ogc.bbr.template.example-profile": [
+      "https://avillar.github.io/chek-workshop-bblocks/_sources/example-profile/rules.shacl"
+    ]
+  },
+  "sourceFiles": "https://avillar.github.io/chek-workshop-bblocks/_sources/example-profile/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/chek-workshop-bblocks",
+  "gitPath": "_sources/example-profile"
+}
