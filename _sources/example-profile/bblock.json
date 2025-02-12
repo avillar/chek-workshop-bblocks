@@ -1,0 +1,10 @@
+{
+  "name": "My example profile",
+  "abstract": "Simple profile for demo purposes",
+  "status": "stable",
+  "dateTimeAddition": "2024-11-10T00:00:00Z",
+  "itemClass": "model",
+  "version": "0.1",
+  "dateOfLastChange": "2024-11-18",
+  "tags": ["chek-validation-profile"]
+}
