@@ -13,10 +13,10 @@
     rdfs:label "My example profile" ;
     dct:abstract "Simple profile for demo purposes" ;
     dct:created "2024-11-10T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/build/generateddocs/json-full/bbr/template/example-profile/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/bblock/ogc.bbr.template.example-profile" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/build/generateddocs/json-full/bbr/template/example-profile/index.json" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://avillar.github.io/chek-workshop-bblocks/build/generateddocs/markdown/bbr/template/example-profile/index.md" ] ;
     dct:hasVersion "0.1" ;
@@ -40,11 +40,11 @@ including [links](https://google.es).
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-02-12T11:59:49.077265"^^xsd:dateTime ;
-    prov:startedAtTime "2025-02-12T11:59:49.019170"^^xsd:dateTime ;
+    prov:endedAtTime "2025-02-12T12:00:52.702843"^^xsd:dateTime ;
+    prov:startedAtTime "2025-02-12T12:00:52.644430"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:db4f396e72d3c67065ccaf98e9b4b7653c87a7de" ;
+            dct:hasVersion "git:8d967321f47234cf2b6ef46be84e51318566ec7d" ;
             rdfs:seeAlso <https://avillar.github.io/chek-workshop-bblocks/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
