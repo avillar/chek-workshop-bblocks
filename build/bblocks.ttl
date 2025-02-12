@@ -40,11 +40,11 @@ including [links](https://google.es).
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-02-12T12:00:52.702843"^^xsd:dateTime ;
-    prov:startedAtTime "2025-02-12T12:00:52.644430"^^xsd:dateTime ;
+    prov:endedAtTime "2025-02-12T12:07:11.210522"^^xsd:dateTime ;
+    prov:startedAtTime "2025-02-12T12:07:11.150111"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:8d967321f47234cf2b6ef46be84e51318566ec7d" ;
+            dct:hasVersion "git:699a817b514b599165e9ad1d47257ed4788e9558" ;
             rdfs:seeAlso <https://avillar.github.io/chek-workshop-bblocks/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
